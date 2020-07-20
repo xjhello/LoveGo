@@ -7,7 +7,7 @@ func main() {
 /*  关键字
     break        default      func         interface    select
     case         defer        go           map          struct
-    chan         else         goto         package      switch
+    chan         else         循环         package      switch
     const        fallthrough  if           range        type
     continue     for          import       return       var
 

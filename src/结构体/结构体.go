@@ -5,10 +5,10 @@ import (
 	"unsafe"
 )
 
-type Person struct{
+type Person struct {
 	name string
 	city string
-	age int
+	age  int
 }
 
 func main() {
@@ -20,8 +20,11 @@ func main() {
 	fmt.Println(p1)
 
 	// 匿名实例化
-	var user struct{Name string; age int}
-	fmt.Printf("%T\n",user)
+	var user struct {
+		Name string
+		age  int
+	}
+	fmt.Printf("%T\n", user)
 
 	// 指针实例化
 	//使用&对结构体进行取地址操作相当于对该结构体类型进行了一次new实例化操作
@@ -33,7 +36,7 @@ func main() {
 	p4 := Person{
 		name: "Jack",
 		city: "sh",
-		age: 19,
+		age:  19,
 	}
 	fmt.Printf("%v", p4)
 
