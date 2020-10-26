@@ -1,6 +1,6 @@
 package main
 
-//import ""
+import "test"
 func main() {
 
 }

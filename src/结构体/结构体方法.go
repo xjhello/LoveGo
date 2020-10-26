@@ -12,6 +12,7 @@ func NewDog(name string) *Dog {
 	return &Dog{name: name}
 }
 
+// 接收器
 func (d Dog) action() {
 	fmt.Println("WAWAWAW~~~")
 }
