@@ -1,12 +1,12 @@
 package main
 
-type aa int32
-type byte1 uint8
-
 import (
-	"fmt",
+	"fmt"
 	"unsafe"
 )
+
+type aa int32
+type byte1 uint8
 
 func swa(a,b *int){
 	// t是ade1

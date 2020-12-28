@@ -11,7 +11,13 @@ type Test interface {
 type Implements struct {
 }
 
-// 实现接口
+// 实现接口 i Implements为接收者
+func (i Implements) inertest(str1 string) int {
+	fmt.Println(111)
+	return 11
+}
+
+// 实现接口 i Implements为接收者
 func (i Implements) inertest(str1 string) int {
 	fmt.Println(111)
 	return 11

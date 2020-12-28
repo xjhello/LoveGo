@@ -5,3 +5,7 @@ func main() {
 
 	println(age)
 }
+
+func tex() []int  {
+	return nil
+}
