@@ -2,6 +2,6 @@ package api
 
 import "fmt"
 
-func Api()  {
+func Api() {
 	fmt.Println(11111111)
 }
