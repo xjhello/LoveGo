@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"net"
+	"time"
 )
 
 // TCP server端
@@ -12,6 +13,11 @@ func process(conn net.Conn) {
 	defer conn.Close() // 关闭连接
 	for {
 		reader := bufio.NewReader(conn)
+
+		time.Sleep(time.Microsecond * 20)
+		fmt.Println("!!!!!!")
+		conn.Close()
+		return
 		var buf [128]byte
 		n, err := reader.Read(buf[:]) // 读取数据
 		if err != nil {
@@ -36,6 +42,10 @@ func main() {
 			fmt.Println("accept failed, err:", err)
 			continue
 		}
-		go process(conn) // 启动一个goroutine处理连接
+		//go process(conn) // 启动一个goroutine处理连接
+
+		time.Sleep(time.Microsecond * 20)
+		fmt.Println("!!!!!!")
+		conn.Close()
 	}
 }
