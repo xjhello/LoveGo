@@ -27,6 +27,7 @@ func process(conn net.Conn) {
 }
 
 func main() {
+	fmt.Printf("socket error!")
 	listen, err := net.Listen("tcp", "127.0.0.1:9091")
 	if err != nil {
 		fmt.Printf("socket error!")

@@ -2,6 +2,22 @@ package main
 
 import "fmt"
 
+const a = 1
+
+func swap(a, b *int)  {
+	*a, *b = *b, *a
+}
+
+func printList(a [5]int)  {
+	// 数组是指类型  参数传递只有值传递  会有拷贝的操作
+	for i,v := range a{
+		fmt.Println(i, v)
+	}
+}
+
+
+
+
 func main() {
 	// 数组
 	//var testArray [3]int                        //数组会初始化为int类型的零值
@@ -17,7 +33,11 @@ func main() {
 	//var aList [4]int
 	//var bList = [4]int{1,2}
 
-
+	// 切片
+	//a := []int32{1,2}
+	x := 10
+	y := 20
+	swap(&x, &y)
 	cLits := [...]int{2,3,21,3,21}
 	for i:=0; i<len(cLits); i++{
 		fmt.Println(cLits[i])
