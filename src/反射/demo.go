@@ -26,7 +26,7 @@ import (
 //	Array                // 数组
 //	Chan                 // 通道
 //	Func                 // 函数
-//	Interface            // 接口
+//	Interface            // interface
 //	Map                  // 映射
 //	Ptr                  // 指针
 //	Slice                // 切片
