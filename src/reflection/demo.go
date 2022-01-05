@@ -18,7 +18,7 @@ import (
 //	Uint16               // 无符号16位整型
 //	Uint32               // 无符号32位整型
 //	Uint64               // 无符号64位整型
-//	Uintptr              // 指针
+//	Uintptr              // pointer
 //	Float32              // 单精度浮点数
 //	Float64              // 双精度浮点数
 //	Complex64            // 64位复数类型
@@ -26,9 +26,9 @@ import (
 //	Array                // 数组
 //	Chan                 // 通道
 //	Func                 // 函数
-//	Interface            // 接口
+//	Interface            // interface
 //	Map                  // 映射
-//	Ptr                  // 指针
+//	Ptr                  // pointer
 //	Slice                // 切片
 //	String               // 字符串
 //	Struct               // 结构体
