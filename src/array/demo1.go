@@ -19,7 +19,7 @@ func main() {
 	var myslice []int
 	fmt.Println(reflect.TypeOf(myslice))
 	b := [2]int{1, 2}
-	myslice=b[:]
+	myslice = b[:]
 	fmt.Println(reflect.TypeOf(myslice))
 	fmt.Println(myslice, b)
 	// 定义方式二
@@ -34,7 +34,7 @@ func main() {
 	fmt.Println(s1)
 	//fmt.Println()
 
-	a2 := []int{1, 3, 5, 7, 9, 11, 13, 15, 17,13}
+	a2 := []int{1, 3, 5, 7, 9, 11, 13, 15, 17, 13}
 	fmt.Println(a2)
 	s2 := a2[:]
 	// 删掉索引为1的那个3

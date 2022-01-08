@@ -14,6 +14,6 @@ func main() {
 	// 	fmt.Printf("k: %s    v:%s\n", k, v)
 	// }
 
-	my_json , _ := json.Marshal(map1)
+	my_json, _ := json.Marshal(map1)
 	fmt.Println(string(my_json))
 }
