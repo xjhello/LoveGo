@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//因为任何方法集都是一个空方法集的超集，所以任何类型都实现了任何空接口类型。
+
 type Test interface {
 	intertest(str string) int
 	intertest2(str string) int
